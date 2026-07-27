@@ -242,6 +242,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+
 }
 .services__text {
     margin: 40px 0 25px 0;
@@ -249,6 +251,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    
 }
 /* группировка общих стилей для заголовков, линий, текста */
 .services__text__title,
@@ -284,7 +287,7 @@ body {
 .slider__wrapper {
     min-height: 215px;
     overflow: hidden;
-    width: 100%;
+
     margin-bottom: 30px;
 }
 .services__slider {
@@ -418,6 +421,8 @@ body {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+
     gap: 25px;
 }
 .lawyers__text {
@@ -431,13 +436,16 @@ body {
 .lawyers__slider__wrapper {
     min-height: 359px;
     overflow: hidden;
+
 }
 .lawyers__slider {
+    max-width: 1320px;
+    overflow: hidden;
     display: flex;
     gap: 25px;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0 25px;
     transition: transform 0.4s ease;
     will-change: transform;
 }
@@ -481,7 +489,7 @@ body {
     background-image: url('./img/bgFeedback.png');
     background-size: cover;
     height: 100%;
-    padding: 40px 30px 40px 25px;
+    padding: 40px 8vw;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -595,6 +603,8 @@ body {
 }
 .usefuls__slider {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     gap: 25px;
     overflow-x: auto;
     padding: 5px 0;
@@ -654,8 +664,10 @@ body {
 .footer {
     max-height: 717px;
     width: 100%;
+    
 }
 .footer__info {
+    
     width: 100%;
     height: 100%;
     background: var(--222col);
@@ -845,6 +857,9 @@ body {
     .usefuls__text {
         max-width: 700px;
     }
+    .usefuls__slider{
+        flex-direction: row;
+    }
     .footer__wrapper {
         display: flex;
         gap: 25px;
@@ -891,12 +906,18 @@ body {
     .main__header__services {
         max-width: 1090px;
     }
+    .services__slider{
+        max-width: 1200px;
+    }
 	.slider__item__paragraph {
 		max-width: 350px;
 	}
     .feedback__wrapper {
         background-position: center;
         width: 100%;
+    }
+    .footer__info{
+        padding: 40px 8vw;
     }
 }
 
@@ -908,5 +929,8 @@ body {
     .services .services__slider {
         grid-template-columns: repeat(3, 425px);
         justify-content: center;
+    }
+    .services__slider{
+        max-width: 1320px;
     }
 }
