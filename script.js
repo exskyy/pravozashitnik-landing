@@ -106,7 +106,7 @@ function createSlider(selector, data, options = {}) {
             }
             currentIndex = nextIndex;
         } else {
-            currentIndex = (currentIndex + 1) % totalItems;
+            currentIndex = (currentIndex + 1) % 3;
         }
         slider.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
     }
